@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Member Details</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Member Details</h1>
+        <button onclick="window.history.back()">Back</button>
+    </header>
+    <main>
+        <div class="member-details">
+            <p>Name: <span id="memberName"></span></p>
+            <p>Number: <span id="memberNumber"></span></p>
+            <p>QR Code:</p>
+            <img id="qrCodeImage" src="" alt="QR Code" />
+            <p>Attendance: <span id="attendanceStatus"></span></p>
+        </div>
+    </main>
+    <script src="../public/js/admin.js"></script>
+</body>
+
+</html>

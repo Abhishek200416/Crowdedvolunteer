@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin dashboard for managing members and tracking attendance.">
+    <meta name="keywords" content="Admin, Dashboard, Members, Attendance, QR Codes">
+    <meta name="author" content="Your Name">
+    <title>Admin Dashboard</title>
+
+    <!-- Link to the updated CSS -->
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header role="banner">
+        <h1>Member Dashboard</h1>
+
+        <div class="header-buttons">
+            <select id="downloadMode" aria-label="Select download mode">
+                <option value="individual">Download Individual Files</option>
+                <option value="combined">Download Combined File</option>
+                <option value="qrcodes">Download QR Codes Only</option>
+            </select>
+            <label for="attendanceDate" id="attendanceDateLabel">Select Date:</label>
+            <input type="date" id="attendanceDate" name="attendanceDate">
+            <button id="downloadExcelBtn" aria-label="Download attendance as Excel file">Download Excel</button>
+            <button id="downloadPDFBtn" aria-label="Download attendance as PDF file">Download PDF</button>
+            <button id="scanBtn" aria-label="Scan QR code for attendance">Scan Attendance</button>
+            <button id="logoutBtn" aria-label="Logout from the dashboard">Logout</button>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main role="main">
+        <input type="text" id="searchInput" placeholder="Search by name or number" aria-label="Search members" />
+        <button id="addMemberBtn" aria-label="Add a new member">Add Member</button>
+
+        <!-- Responsive Table -->
+        <div class="table-responsive">
+            <table id="memberTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>QR Code</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4" style="text-align:center;">Loading members...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Attendance Summary -->
+        <p>Total Members: <span id="totalCount">0</span></p>
+        <p>Present: <span id="presentCount">0</span></p>
+        <p>Absent: <span id="absentCount">0</span></p>
+    </main>
+
+    <!-- Link to JavaScript -->
+    <script src="../public/js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Add New Member</h1>
+        <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+    </header>
+    <main>
+        <form id="addMemberForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Number:</label>
+            <input type="tel" id="number" name="number" pattern="\d{10}" title="Enter exactly 10 digits" required>
+
+
+            <button type="submit">Add Member</button>
+        </form>
+        <p id="message"></p>
+    </main>
+    <script src="../public/js/admin.js"></script>
+</body>
+
+</html>

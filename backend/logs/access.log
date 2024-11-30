@@ -1,0 +1,4 @@
+127.0.0.1 - - [26/Nov/2024:14:54:46 +0000] "GET /views/scanAttendance.html HTTP/1.1" 404 46 "https://4f7c-49-205-98-39.ngrok-free.app/views/dashboard.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+127.0.0.1 - - [26/Nov/2024:14:54:57 +0000] "GET / HTTP/1.1" 404 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+127.0.0.1 - - [26/Nov/2024:14:55:19 +0000] "GET / HTTP/1.1" 404 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+127.0.0.1 - - [26/Nov/2024:14:55:19 +0000] "GET /favicon.ico HTTP/1.1" 404 46 "https://4815-49-205-98-39.ngrok-free.app/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
